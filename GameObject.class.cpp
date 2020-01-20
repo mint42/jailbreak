@@ -6,7 +6,7 @@
 /*   By: rreedy <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/19 10:39:07 by rreedy            #+#    #+#             */
-/*   Updated: 2020/01/19 11:02:36 by rreedy           ###   ########.fr       */
+/*   Updated: 2020/01/19 18:09:03 by rreedy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@ GameObject::GameObject( void )
 	_xPos = 0;
 	_yPos = 0;
 	_Id = '.';
-	_lvl = 0;
 	print("GameObject Default constructor called");
 }
 
@@ -83,11 +82,6 @@ GameObject &GameObject::operator=(GameObject const &base)
 **	}
 */
 
-void			 GameObject::setup( void )
-{
-
-}
-
 //gets
 unsigned int     GameObject::get_xPos( void )
 {
@@ -100,8 +94,7 @@ unsigned int    GameObject::get_yPos( void )
 }
 
 unsigned int    GameObject::get_maxX( void )
-{
-	return this->_maxX;
+{ return this->_maxX;
 }
 
 unsigned int    GameObject::get_maxY( void )

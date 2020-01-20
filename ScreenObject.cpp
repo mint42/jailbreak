@@ -6,7 +6,7 @@
 /*   By: rreedy <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/19 08:59:17 by rreedy            #+#    #+#             */
-/*   Updated: 2020/01/19 09:11:23 by rreedy           ###   ########.fr       */
+/*   Updated: 2020/01/19 18:27:23 by rreedy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,7 +66,7 @@ void				ScreenObject::get_dimensions( void )
 	getmaxyx(stdscr, height, width);
 }
 
-void				ScreenObject::draw_game(const GameObject &game)
+void				ScreenObject::draw_game()
 {
-
+	
 }

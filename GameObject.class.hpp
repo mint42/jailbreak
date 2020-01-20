@@ -6,7 +6,7 @@
 /*   By: rreedy <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/19 09:17:25 by rreedy            #+#    #+#             */
-/*   Updated: 2020/01/19 10:56:35 by rreedy           ###   ########.fr       */
+/*   Updated: 2020/01/19 18:02:09 by rreedy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,7 +77,7 @@ class				GameObject
 			ENEMY;				// CharacterObject
 			BULLET;				// MovingObject
 			SCENERY;			// GameObject
-		}
+		};
 };
 
 #endif

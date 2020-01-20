@@ -1,31 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   MovingObject.hpp                                   :+:      :+:    :+:   */
+/*   gameplay.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rreedy <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/01/19 11:04:10 by rreedy            #+#    #+#             */
-/*   Updated: 2020/01/19 18:11:42 by rreedy           ###   ########.fr       */
+/*   Created: 2020/01/19 17:27:22 by rreedy            #+#    #+#             */
+/*   Updated: 2020/01/19 18:02:06 by rreedy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef MovingObject_HPP
-# define MovingObject_HPP
-
-class			MovingObject
+void		setup(GameObject &entities[])
 {
-	public:
-		MovingObject(void);
-		MovingObject(const MovingObject &other);
-		~MovingObject(void);
-		MovingObject		&operator=(const MovingObject &other);
-
-	private:
-		bool				moving;
-		unsigned int		speed;
-		int					x_direction;
-		int					y_direction;
-};
-
-#endif
+	create_player_character
+}

@@ -6,7 +6,7 @@
 /*   By: rreedy <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/19 11:04:10 by rreedy            #+#    #+#             */
-/*   Updated: 2020/01/19 11:41:52 by rreedy           ###   ########.fr       */
+/*   Updated: 2020/01/19 18:13:50 by rreedy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,12 +16,13 @@
 **	Constructors
 */
 
-MovingObject::MovingObject(void)
+MovingObject::MovingObject(int x, int y, unsigned int speed, enum type)
 {
-	moving = 0;
-	speed = 0;
-	x_direction = 0;
-	y_direction = 0;
+	moving = FALSE;
+	speed = s;
+	x_direction = x;
+	y_direction = y;
+	GameObject::setup(type);
 }
 
 MovingObject::MovingObject(const MovingObject &other)
@@ -35,7 +36,6 @@ MovingObject::MovingObject(const MovingObject &other)
 
 MovingObject::~MovingObject(void)
 {
-
 }
 
 /*
@@ -48,6 +48,7 @@ MovingObject		&MovingObject::operator=(const MovingObject &other)
 	speed = 0;
 	x_direction = 0;
 	y_direction = 0;
+	//copy over parent information
 }
 
 /*

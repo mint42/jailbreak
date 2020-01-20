@@ -6,7 +6,7 @@
 /*   By: rreedy <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/19 08:13:20 by rreedy            #+#    #+#             */
-/*   Updated: 2020/01/19 10:56:08 by rreedy           ###   ########.fr       */
+/*   Updated: 2020/01/19 18:29:13 by rreedy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,11 @@
 int		main(void)
 {
 	ScreenObject	screen;
-	GameObject		game;
+	GameObject		scenery[15];
+	int				n_scenery;
+	CharObject		enemies[10];
+	int				n_enemies;
+	CharObject		P1;
 	int				input_ch;
 
 /*
@@ -52,8 +56,8 @@ int		main(void)
 	nodelay();							// make the getch() function not wait for a character before returning
 	//	WINDOW *stdscr is the default window, spanning the entire size of the terminal. it comes with the library
 
-	game.setup();						// generate p1 and enemies and anything else needed
-	screen.draw_game(game);
+	setup();						// generate p1 and enemies and anything else needed
+	screen.draw_game(scenery, n_scenery, enemies, enemies, n_enemies, P1);
 	while (42)
 	{
 		input_ch = getch();
